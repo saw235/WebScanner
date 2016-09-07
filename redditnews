@@ -1,0 +1,10 @@
+import praw
+
+r = praw.Reddit(user_agent = 'Test Script by xsaw')
+rdota2 = r.get_subreddit('dota2')
+
+posts = rdota2.get_hot(limit=10)
+
+for post in posts
+    print post
+
